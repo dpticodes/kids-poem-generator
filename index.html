@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Kids poem generator</title>
   </head>
@@ -18,7 +19,7 @@
         <h1>Welcome to the AI kids poem generator</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter poem idea - cat, rainbow."
@@ -29,10 +30,7 @@
           />
           <input type="submit" value="Generate a poem" class="submit-button" />
         </form>
-        <div class="poem">
-          Twinkle, twinkle, little star,
-          <br />How I wonder what you are,
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         This AI project was coded by
