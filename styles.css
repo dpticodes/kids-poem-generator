@@ -1,0 +1,115 @@
+body {
+  background-image: url("images/poem\ background.jpg");
+  background-size: cover; /* Scale image to cover */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.container {
+  max-width: 700px;
+  margin: 120px auto;
+  background-color: #fff279;
+  padding: 30px;
+  border-radius: 20px;
+}
+h1 {
+  font-family: "Sour Gummy", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  font-size: 30px;
+  line-height: 1.5;
+  font-style: normal;
+  color: black;
+}
+form {
+  padding: 25px;
+  background-color: #00bbf0;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.instructions {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid rgb(111, 214, 235);
+  border-radius: 50px;
+  width: 80%;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.submit-button {
+  white-space: nowrap;
+  margin-left: 10px;
+  padding: 14px 24px;
+  border: 1px solid rgb(89, 91, 219);
+  border-radius: 50px;
+  width: auto;
+  min-width: fit-content;
+  flex-shrink: 0;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #085cf8;
+  color: white;
+  cursor: pointer;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.poem {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #fef5a3;
+  padding: 20px;
+  line-height: 2;
+  border-left: 3px solid #ed393d;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+a {
+  color: #ed393d;
+}
+@media (max-width: 480px) {
+  .instructions {
+    width: 100%;
+    min-width: 0;
+    font-size: 14px;
+  }
+  .instructions::placeholder {
+    font-size: 13px;
+  }
+  form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .submit-button {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}

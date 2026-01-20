@@ -3,42 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Kids poem generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the AI kids poem generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Desribe what your poem is about....."
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" value="Genrate poem" />
-        <div class="hint">i.e: flower, love, rainbow.</div>
-        <div>
+    <div class="container">
+      <header>
+        <h1>Welcome to the AI kids poem generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter poem idea - cat, rainbow."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" value="Generate a poem" class="submit-button" />
+        </form>
+        <div class="poem">
           Twinkle, twinkle, little star,
           <br />How I wonder what you are,
         </div>
-      </form>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/dpticodes" target="_blank">Deepti Ayyar</a>
-      and is open-sourced on
-      <a href="https://github.com/dpticodes/kids-poem-generator" target="_blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a href="https://kids-poem-generator.vercel.app/" target="_blank"
-        >Vercel</a
-      >.
-    </footer>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/dpticodes" target="_blank"
+          ><strong>Deepti Ayyar</strong></a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/dpticodes/kids-poem-generator"
+          target="_blank"
+          ><strong>GitHub</strong></a
+        >
+        and is hosted on
+        <a href="https://kids-poem-generator.vercel.app/" target="_blank"
+          ><strong>Vercel</strong></a
+        >.
+      </footer>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
