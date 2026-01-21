@@ -23,13 +23,23 @@ h1 {
   font-style: normal;
   color: black;
 }
-form {
-  padding: 25px;
+
+.form-container {
   background-color: #00bbf0;
+  margin-bottom: 20px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
+  padding: 20px;
+}
+.hint {
+  font-size: 15px;
+  line-height: 1.5;
+  padding-top: 10px;
+  padding-left: 10px;
+  opacity: 0.6;
+}
+form {
   display: flex;
-  margin-bottom: 20px;
 }
 
 .instructions {
@@ -82,6 +92,9 @@ form {
   border-left: 3px solid #ed393d;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
+.hidden {
+  display: none;
+}
 footer {
   text-align: center;
   font-size: 12px;
@@ -112,4 +125,17 @@ a {
     margin-left: 0;
     text-align: center;
   }
+}
+@keyframes soft-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.soft-blink {
+  animation: soft-blink 1.5s infinite;
 }

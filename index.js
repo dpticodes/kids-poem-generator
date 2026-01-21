@@ -15,12 +15,17 @@ function generatePoem(event) {
   let apiKey = "3c4ba37b00dacafa6bo5t89fa3684eff";
   let prompt = `User instruction: Generate a kid friendly poem in English about ${instructionInput.value}`;
   let context =
-    "You are a poet and love to write funny kid friendly short poems. Your mission is to generate a six lines poem without a title in basic HTML and seperate each line with a <br/> and do not mention html on the page. Make sure to follow user instructions. ";
+    "You are a poet and love to write funny kid friendly short poems. Your mission is to generate a six lines poem without a title in basic HTML and seperate each line with a <br/> and do not add an extra <br/> after the poem and do not mention html on the page. Make sure to follow user instructions. ";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<span class="soft-blink">⏳ Please wait, creating a poem on ${instructionInput.value}....</span>`;
 
   console.log("generating poem");
   console.log(`prompt:${prompt}`);
   console.log(`context:${context}`);
+
   axios.get(apiUrl).then(displayPoem);
 }
 
